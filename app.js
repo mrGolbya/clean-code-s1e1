@@ -7,7 +7,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput = document.getElementsByClassName("section__add-task"); //Add a new task.
+var taskInput = document.getElementById("section__add-task"); //Add a new task.
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTaskHolder = document.getElementById("section__todo-list"); //ul of #incompleteTasks
 var completedTasksHolder = document.getElementById("section__completed-tasks"); //section__completed-tasks
@@ -55,7 +55,7 @@ var createNewTaskElement = function (taskString) {
 
 var addTask = function () {
   console.log("Add Task...");
-  //Create a new list item with the text from the #section__add-task:
+  //Create a new list item with the text from the .section__add-task:
   if (!taskInput.value) return;
   var listItem = createNewTaskElement(taskInput.value);
 

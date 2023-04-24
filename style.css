@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
 }
 
-.section__add-task,
+#section__add-task,
 .section__todo-task {
   width: 56%;
   display: inline-block;
